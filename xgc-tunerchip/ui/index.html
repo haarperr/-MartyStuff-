@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script> -->
+    <script src="./app.js" type="text/javascript"></script>
+    <!-- load MUI -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+  </head>
+  <body>
+
+    <div id="container">
+      
+      <!-- <img src="./tablet.png" alt="tablet" id="tablet"> -->
+      <div id="tablet">
+        <div class="tuner">
+          <div class="slidecontainer">
+            <h1>Boost</h1>
+            <p>Normal | High</p>
+            <input type="range" min="0" max="10" step="1" class="slider" id="boostSlider">
+          </div>
+          <div class="slidecontainer">
+            <h1>Acceleration</h1>
+            <p>Normal | Faster</p>
+            <input type="range" min="0" max="10" step="1" class="slider" id="accelerationSlider">
+          </div>
+          <div class="slidecontainer">
+            <h1>Gear Change</h1>
+            <p>Normal | Faster</p>
+            <input type="range" min="0" max="10" step="1" class="slider" id="gearSlider">
+          </div>
+          <div class="slidecontainer">
+            <h1>Braking</h1>
+            <p>Rear | Front</p>
+            <input type="range" min="0" max="10" step="1" class="slider" id="brakingSlider">
+          </div>
+          <div class="slidecontainer">
+            <h1>Drive Train</h1>
+            <p>Rear | Front</p>
+            <input type="range" min="0" max="10" step="1" class="slider" id="drivetrainSlider">
+          </div>
+          
+          <div class="buttonscontainer">
+            <button class="btn greenButton" id="saveButton">Save</button>
+            <button class="btn greenButton" id="defaultTuneButton">Default</button>
+            <button class="btn greenButton" id="sportTuneButton">Sport</button>
+
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
